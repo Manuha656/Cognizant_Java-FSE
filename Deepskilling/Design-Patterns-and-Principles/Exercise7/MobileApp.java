@@ -6,6 +6,6 @@ public class MobileApp implements User {
     }
 
     public void update() {
-        System.out.println("Mobile Stock update..");
+        System.out.println("Mobile Stock update.." + name);
     }
 }

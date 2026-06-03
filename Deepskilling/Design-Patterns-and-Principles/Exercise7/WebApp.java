@@ -6,6 +6,6 @@ public class WebApp implements User {
     }
 
     public void update() {
-        System.out.println("Web Stock update..");
+        System.out.println("Web Stock update.." + name);
     }
 }
