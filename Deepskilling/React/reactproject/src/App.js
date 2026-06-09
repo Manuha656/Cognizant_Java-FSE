@@ -3,16 +3,21 @@
 // import Contact from './task2/Contact';
 // import CalculateScore from './task3/CalculateScore';
 // import Posts from './task4/Posts';
-import CohortDetails from './task5/CohortDetails';
+// import CohortDetails from './task5/CohortDetails';
+import { BrowserRouter,Route,Routes,Link,Navigate } from "react-router-dom";
+import Home from "./task6/Home";
+import TrainerDetails from "./task6/TrainerDetails";
+import TrainersList from "./task6/TrainersList";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className='container'>
         {/* <Home/>
         <About/>
         <Contact/>
         <CalculateScore name={"Manu"} school={"CVR"} total={300} goal={3} />
-        <Posts/> */}
+        <Posts/>
         <CohortDetails cohort={{
           currentStatus: "Ongoing",
           cohortCode: 1021,
@@ -20,8 +25,25 @@ function App() {
           startDate: "01-10-2026",
           coachName: "Manu",
           trainerName: "Akki"
-        }}/>
+        }}/> */}
+        <nav>
+          <h1>Cognizant Academy</h1>
+          <Link to='/'>
+            Home
+          </Link> {'|'}
+          <Link to='trainers'>
+            Trainers
+          </Link>
+        </nav>
+          <hr/>
+
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/trainers" element={<TrainersList/>}/>
+            <Route path="/trainers/:id" element={<TrainerDetails />}/>
+          </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
