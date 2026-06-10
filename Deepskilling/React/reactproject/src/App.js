@@ -8,6 +8,8 @@ import { BrowserRouter,Route,Routes,Link,Navigate } from "react-router-dom";
 import Home from "./task6/Home";
 import TrainerDetails from "./task6/TrainerDetails";
 import TrainersList from "./task6/TrainersList";
+import OnlineShopping from "./task7/OnlineShopping";
+import CountPeople from "./task8/CountPeople";
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
           startDate: "01-10-2026",
           coachName: "Manu",
           trainerName: "Akki"
-        }}/> */}
+        }}/>
+        
         <nav>
           <h1>Cognizant Academy</h1>
           <Link to='/'>
@@ -42,6 +45,10 @@ function App() {
             <Route path="/trainers" element={<TrainersList/>}/>
             <Route path="/trainers/:id" element={<TrainerDetails />}/>
           </Routes>
+
+          <OnlineShopping/> */}
+
+          <CountPeople/>
     </div>
     </BrowserRouter>
   );
