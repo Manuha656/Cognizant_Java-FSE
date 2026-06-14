@@ -12,23 +12,24 @@ import OnlineShopping from "./task7/OnlineShopping";
 import CountPeople from "./task8/CountPeople";
 import ListofPlayers from "./task9/ListofPlayers";
 import IndianPlayers from "./task9/IndianPlayers";
+import OfficeSpace from "./task10/OfficeSpace";
 
 function App() {
-  let flag = false;
-  if(flag){
-    return(
-      <div>
-        <ListofPlayers/>
-      </div>
-    )
-  }
-  else{
-    return(
-      <div>
-        <IndianPlayers/>
-      </div>
-    )
-  }
+  // let flag = false;
+  // if(flag){
+  //   return(
+  //     <div>
+  //       <ListofPlayers/>
+  //     </div>
+  //   )
+  // }
+  // else{
+  //   return(
+  //     <div>
+  //       <IndianPlayers/>
+  //     </div>
+  //   )
+  // }
   // return (
   //   <BrowserRouter>
   //   <div className='container'>
@@ -71,6 +72,11 @@ function App() {
 
 
   // );
+  return(
+    <div>
+      <OfficeSpace/>
+    </div>
+  )
 }
 
 export default App;
