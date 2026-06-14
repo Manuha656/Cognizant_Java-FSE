@@ -10,48 +10,67 @@ import TrainerDetails from "./task6/TrainerDetails";
 import TrainersList from "./task6/TrainersList";
 import OnlineShopping from "./task7/OnlineShopping";
 import CountPeople from "./task8/CountPeople";
+import ListofPlayers from "./task9/ListofPlayers";
+import IndianPlayers from "./task9/IndianPlayers";
 
 function App() {
-  return (
-    <BrowserRouter>
-    <div className='container'>
-        {/* <Home/>
-        <About/>
-        <Contact/>
-        <CalculateScore name={"Manu"} school={"CVR"} total={300} goal={3} />
-        <Posts/>
-        <CohortDetails cohort={{
-          currentStatus: "Ongoing",
-          cohortCode: 1021,
-          technology: "tech",
-          startDate: "01-10-2026",
-          coachName: "Manu",
-          trainerName: "Akki"
-        }}/>
+  let flag = false;
+  if(flag){
+    return(
+      <div>
+        <ListofPlayers/>
+      </div>
+    )
+  }
+  else{
+    return(
+      <div>
+        <IndianPlayers/>
+      </div>
+    )
+  }
+  // return (
+  //   <BrowserRouter>
+  //   <div className='container'>
+  //       <Home/>
+  //       <About/>
+  //       <Contact/>
+  //       <CalculateScore name={"Manu"} school={"CVR"} total={300} goal={3} />
+  //       <Posts/>
+  //       <CohortDetails cohort={{
+  //         currentStatus: "Ongoing",
+  //         cohortCode: 1021,
+  //         technology: "tech",
+  //         startDate: "01-10-2026",
+  //         coachName: "Manu",
+  //         trainerName: "Akki"
+  //       }}/>
         
-        <nav>
-          <h1>Cognizant Academy</h1>
-          <Link to='/'>
-            Home
-          </Link> {'|'}
-          <Link to='trainers'>
-            Trainers
-          </Link>
-        </nav>
-          <hr/>
+  //       <nav>
+  //         <h1>Cognizant Academy</h1>
+  //         <Link to='/'>
+  //           Home
+  //         </Link> {'|'}
+  //         <Link to='trainers'>
+  //           Trainers
+  //         </Link>
+  //       </nav>
+  //         <hr/>
 
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/trainers" element={<TrainersList/>}/>
-            <Route path="/trainers/:id" element={<TrainerDetails />}/>
-          </Routes>
+  //         <Routes>
+  //           <Route path="/" element={<Home/>}/>
+  //           <Route path="/trainers" element={<TrainersList/>}/>
+  //           <Route path="/trainers/:id" element={<TrainerDetails />}/>
+  //         </Routes>
 
-          <OnlineShopping/> */}
+  //         <OnlineShopping/>
 
-          <CountPeople/>
-    </div>
-    </BrowserRouter>
-  );
+  //         <CountPeople/>
+  //   </div>
+  //   </BrowserRouter>
+
+
+  // );
 }
 
 export default App;
