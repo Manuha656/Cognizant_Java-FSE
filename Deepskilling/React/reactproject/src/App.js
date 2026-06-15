@@ -13,6 +13,8 @@ import CountPeople from "./task8/CountPeople";
 import ListofPlayers from "./task9/ListofPlayers";
 import IndianPlayers from "./task9/IndianPlayers";
 import OfficeSpace from "./task10/OfficeSpace";
+import EventExamples from "./task11/EventExamples";
+import CurrencyConvertor from "./task11/CurrencyConvertor";
 
 function App() {
   // let flag = false;
@@ -74,7 +76,10 @@ function App() {
   // );
   return(
     <div>
-      <OfficeSpace/>
+      {/* <OfficeSpace/> */}
+      <EventExamples/>
+      <hr/>
+      <CurrencyConvertor/>
     </div>
   )
 }
