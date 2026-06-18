@@ -15,6 +15,7 @@ import IndianPlayers from "./task9/IndianPlayers";
 import OfficeSpace from "./task10/OfficeSpace";
 import EventExamples from "./task11/EventExamples";
 import CurrencyConvertor from "./task11/CurrencyConvertor";
+import TicketBooking from "./task12/TicketBooking";
 
 function App() {
   // let flag = false;
@@ -76,10 +77,11 @@ function App() {
   // );
   return(
     <div>
-      {/* <OfficeSpace/> */}
+      {/* <OfficeSpace/>
       <EventExamples/>
       <hr/>
-      <CurrencyConvertor/>
+      <CurrencyConvertor/> */}
+      <TicketBooking/>
     </div>
   )
 }
