@@ -16,6 +16,7 @@ import OfficeSpace from "./task10/OfficeSpace";
 import EventExamples from "./task11/EventExamples";
 import CurrencyConvertor from "./task11/CurrencyConvertor";
 import TicketBooking from "./task12/TicketBooking";
+import Blogger from "./task13/Blogger";
 
 function App() {
   // let flag = false;
@@ -80,8 +81,9 @@ function App() {
       {/* <OfficeSpace/>
       <EventExamples/>
       <hr/>
-      <CurrencyConvertor/> */}
-      <TicketBooking/>
+      <CurrencyConvertor/>
+      <TicketBooking/> */}
+      <Blogger/>
     </div>
   )
 }
