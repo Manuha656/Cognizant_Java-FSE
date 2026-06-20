@@ -17,6 +17,7 @@ import EventExamples from "./task11/EventExamples";
 import CurrencyConvertor from "./task11/CurrencyConvertor";
 import TicketBooking from "./task12/TicketBooking";
 import Blogger from "./task13/Blogger";
+import EmployeeManagement from "./task14/EmployeeManagement";
 
 function App() {
   // let flag = false;
@@ -82,8 +83,9 @@ function App() {
       <EventExamples/>
       <hr/>
       <CurrencyConvertor/>
-      <TicketBooking/> */}
-      <Blogger/>
+      <TicketBooking/>
+      <Blogger/> */}
+      <EmployeeManagement/>
     </div>
   )
 }
